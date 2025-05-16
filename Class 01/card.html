@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #121212;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        background-color: #242424;
+        border: 2px solid #484848;
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        border-radius: 8px;
+      }
+
+      .card-image img {
+        width: 380px;
+        height: auto;
+        border-radius: 10px;
+        margin: 8px;
+      }
+
+      .content h1 {
+        color: #fff;
+        font-family: "Noto Sans", Helvetica, sans-serif;
+        padding-left: 12px;
+        font-size: 25px;
+        font-weight: 700;
+      }
+      hr {
+        margin-top: 15px;
+        border: 1px solid #3d3d3d;
+        margin-left: 12px;
+        width: 300px;
+      }
+
+      .price-tag {
+        color: #fff;
+        margin-top: 20px;
+
+        & span {
+          padding: 12px;
+          font-size: 16px;
+          font-weight: bolder;
+          font-weight: bolder;
+          font-style: normal;
+        }
+      }
+      .blue {
+        color: #58bdef;
+      }
+
+      .strike {
+        color: #4e4e4e;
+      }
+
+      .discount {
+        background-color: #0af5b3;
+        border-radius: 5px;
+        margin-left: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-image">
+        <img src="thumbnail.png" alt="Web Development Thumbnail" />
+      </div>
+      <div class="content">
+        <h1>Web Development Master Course @dot Batch</h1>
+      </div>
+      <hr />
+
+      <div class="price-tag">
+        <span class="blue">₹4500</span>
+        <span class="strike">
+          <strike> ₹6999 </strike>
+        </span>
+        <span class="discount">50% off</span>
+      </div>
+    </div>
+  </body>
+</html>
